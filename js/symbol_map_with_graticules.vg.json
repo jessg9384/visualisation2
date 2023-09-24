@@ -38,7 +38,7 @@
             "field": "Avg expenditure per trip (dollars) in year ending March 2023",
             "type": "quantitative",
             "title": "Average expenditure",
-            "scale": {"scheme": "reds"}
+            "scale": {"scheme": "blues"}
           }
         }
       }
