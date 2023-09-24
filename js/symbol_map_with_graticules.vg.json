@@ -28,9 +28,9 @@
           "longitude": {"field": "long", "type": "quantitative"},
           "latitude": {"field": "lat", "type": "quantitative"},
           "size": {
-            "field": "Number of trips ('000)",
+            "field": "Number of trips (000)",
             "type": "quantitative",
-            "title": "Number of trips ('000)",
+            "title": "Number of trips (000)",
             "scale": {"domain": [4000, 25000]}
           },
           "color": {
