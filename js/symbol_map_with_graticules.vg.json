@@ -41,9 +41,7 @@
             "scale": {"scheme": "blues"}
           },
           "tooltip": [
-            {"field": "Region","type":"nominal","title":"Region"},
-            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)"},
-            {"field": "Avg expenditure per trip (dollars) in year ending March 2023","type":"quantitative","title":"Average expenditure ($)"}
+            {"field": "Region","type":"nominal","title":"Region"}
           ]
         }
         
