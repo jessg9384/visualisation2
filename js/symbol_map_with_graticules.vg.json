@@ -32,7 +32,7 @@
             "field": "Number of trips (000)",
             "type": "quantitative",
             "title": "Number of trips ('000)",
-            "scale": {"domain": [4000, 25000]}
+            "scale": {"domain": [1500, 25000]}
           },
           "color": {
             "field": "Avg expenditure per trip (dollars) in year ending March 2023",
