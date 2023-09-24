@@ -22,7 +22,7 @@
 
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2data.csv"
+          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2dataold.csv"
         },
         "mark": {"type": "circle","tooltip":true},
         "encoding": {
