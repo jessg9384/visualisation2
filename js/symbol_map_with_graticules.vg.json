@@ -42,7 +42,8 @@
           },
           "tooltip": [
             {"field": "Region","type":"nominal","title":"Region"},
-            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)"},
+            {"field": "Rank","type":"ordinal","title":"Rank (by # of trips)"},
+            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)","format":","},
             {"field": "Avg expenditure per trip (dollars) in year ending March 2023","type":"quantitative","title":"Average expenditure ($)"}
           ]
         }
