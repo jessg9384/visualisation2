@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 450,
-    "height": 450,
+    "height": 400,
     "title": "Number of day trips to Australian regions and average expenditure in 2023",
     "projection": {"type": "mercator"},
     "layer": [
