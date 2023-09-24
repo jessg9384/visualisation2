@@ -24,7 +24,7 @@
         "data": {
           "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2data.csv"
         },
-        "mark": {"type": "circle"},
+        "mark": {"type": "circle","tooltip":true},
         "encoding": {
           "longitude": {"field": "long", "type": "quantitative"},
           "latitude": {"field": "lat", "type": "quantitative"},
@@ -41,7 +41,9 @@
             "scale": {"scheme": "blues"}
           },
           "tooltip": [
-            {"field": "Region","type":"nominal","title":"Region"}
+            {"field": "Region","type":"nominal","title":"Region"},
+            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)"},
+            {"field": "Avg expenditure per trip (dollars) in year ending March 2023","type":"quantitative","title":"Average expenditure ($)"}
           ]
         }
         
