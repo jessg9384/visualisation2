@@ -1,0 +1,257 @@
+trip type,Location,year,spend
+overnight,New South Wales,2008,12978.88
+overnight,New South Wales,2009,12499.93
+overnight,New South Wales,2010,13069.81
+overnight,New South Wales,2011,13984.91
+overnight,New South Wales,2012,13800.41
+overnight,New South Wales,2013,14469.87
+overnight,New South Wales,2014,15049.56
+overnight,New South Wales,2015,15784.38
+overnight,New South Wales,2016,16107.63
+overnight,New South Wales,2017,17209.86
+overnight,New South Wales,2018,20090.22
+overnight,New South Wales,2019,22605.78
+overnight,New South Wales,2020,18093.87
+overnight,New South Wales,2021,19402.67
+overnight,New South Wales,2022,17600.94
+overnight,New South Wales,2023,30215.02
+overnight,Victoria,2008,9262.52
+overnight,Victoria,2009,9147.58
+overnight,Victoria,2010,9196.22
+overnight,Victoria,2011,9690.06
+overnight,Victoria,2012,10031.75
+overnight,Victoria,2013,10339.76
+overnight,Victoria,2014,10753.62
+overnight,Victoria,2015,11181.62
+overnight,Victoria,2016,11613.64
+overnight,Victoria,2017,12974.4
+overnight,Victoria,2018,14241.6
+overnight,Victoria,2019,16205.53
+overnight,Victoria,2020,13342.34
+overnight,Victoria,2021,8853.36
+overnight,Victoria,2022,12730.41
+overnight,Victoria,2023,22487.28
+overnight,Queensland,2008,13226.06
+overnight,Queensland,2009,12043.41
+overnight,Queensland,2010,12143.46
+overnight,Queensland,2011,11686
+overnight,Queensland,2012,13633.66
+overnight,Queensland,2013,14057.97
+overnight,Queensland,2014,13717.03
+overnight,Queensland,2015,13795.69
+overnight,Queensland,2016,14587.79
+overnight,Queensland,2017,15277.49
+overnight,Queensland,2018,16938.13
+overnight,Queensland,2019,18802.1
+overnight,Queensland,2020,15268.7
+overnight,Queensland,2021,16285.21
+overnight,Queensland,2022,19647.32
+overnight,Queensland,2023,28835.69
+overnight,South Australia,2008,3156.43
+overnight,South Australia,2009,3118.97
+overnight,South Australia,2010,3227.07
+overnight,South Australia,2011,3259.28
+overnight,South Australia,2012,3337.09
+overnight,South Australia,2013,3146.35
+overnight,South Australia,2014,3442.37
+overnight,South Australia,2015,3564.58
+overnight,South Australia,2016,3742.3
+overnight,South Australia,2017,3816.68
+overnight,South Australia,2018,4022.86
+overnight,South Australia,2019,4850.28
+overnight,South Australia,2020,4040.38
+overnight,South Australia,2021,4335.07
+overnight,South Australia,2022,4427.64
+overnight,South Australia,2023,6693.51
+overnight,Western Australia,2008,4781.71
+overnight,Western Australia,2009,4364.9
+overnight,Western Australia,2010,4100.91
+overnight,Western Australia,2011,4227.59
+overnight,Western Australia,2012,5045.69
+overnight,Western Australia,2013,5094.02
+overnight,Western Australia,2014,6477.88
+overnight,Western Australia,2015,7058.6
+overnight,Western Australia,2016,7572.53
+overnight,Western Australia,2017,6945.35
+overnight,Western Australia,2018,6561.2
+overnight,Western Australia,2019,8211.38
+overnight,Western Australia,2020,7027.89
+overnight,Western Australia,2021,7336.58
+overnight,Western Australia,2022,8465.32
+overnight,Western Australia,2023,11461.98
+overnight,Tasmania,2008,1691.96
+overnight,Tasmania,2009,1527.35
+overnight,Tasmania,2010,1831.19
+overnight,Tasmania,2011,1533.09
+overnight,Tasmania,2012,1617.33
+overnight,Tasmania,2013,1804.76
+overnight,Tasmania,2014,1761.22
+overnight,Tasmania,2015,1880.38
+overnight,Tasmania,2016,1812.67
+overnight,Tasmania,2017,2352.3
+overnight,Tasmania,2018,2356.61
+overnight,Tasmania,2019,2843.76
+overnight,Tasmania,2020,2284.09
+overnight,Tasmania,2021,2334.78
+overnight,Tasmania,2022,2881.44
+overnight,Tasmania,2023,3510.23
+overnight,Northern Territory,2008,1394.52
+overnight,Northern Territory,2009,1451.18
+overnight,Northern Territory,2010,1451.13
+overnight,Northern Territory,2011,1214.46
+overnight,Northern Territory,2012,1312.11
+overnight,Northern Territory,2013,1322.51
+overnight,Northern Territory,2014,1513.79
+overnight,Northern Territory,2015,1769.77
+overnight,Northern Territory,2016,1841.62
+overnight,Northern Territory,2017,1984.08
+overnight,Northern Territory,2018,1739.01
+overnight,Northern Territory,2019,2087.96
+overnight,Northern Territory,2020,1562.13
+overnight,Northern Territory,2021,1460.06
+overnight,Northern Territory,2022,2065.67
+overnight,Northern Territory,2023,2683.95
+overnight,ACT,2008,1088.03
+overnight,ACT,2009,994.9
+overnight,ACT,2010,1076.2
+overnight,ACT,2011,993.53
+overnight,ACT,2012,1048.5
+overnight,ACT,2013,1206.79
+overnight,ACT,2014,1264.4
+overnight,ACT,2015,1361.58
+overnight,ACT,2016,1384.29
+overnight,ACT,2017,1626.3
+overnight,ACT,2018,1625.32
+overnight,ACT,2019,1866.45
+overnight,ACT,2020,1388.15
+overnight,ACT,2021,1334.48
+overnight,ACT,2022,1229.5
+overnight,ACT,2023,2402.76
+daytrip,New South Wales,2008,4750.53
+daytrip,New South Wales,2009,4757.15
+daytrip,New South Wales,2010,5230.96
+daytrip,New South Wales,2011,4974.97
+daytrip,New South Wales,2012,5588.84
+daytrip,New South Wales,2013,5652.19
+daytrip,New South Wales,2014,5777.15
+daytrip,New South Wales,2015,5574.35
+daytrip,New South Wales,2016,5870.68
+daytrip,New South Wales,2017,5933.27
+daytrip,New South Wales,2018,6586.77
+daytrip,New South Wales,2019,7575.72
+daytrip,New South Wales,2020,6963.55
+daytrip,New South Wales,2021,5999.72
+daytrip,New South Wales,2022,5254.27
+daytrip,New South Wales,2023,9706.24
+daytrip,Victoria,2008,3436.57
+daytrip,Victoria,2009,3897.91
+daytrip,Victoria,2010,3948.57
+daytrip,Victoria,2011,3713.31
+daytrip,Victoria,2012,4416.72
+daytrip,Victoria,2013,4482.86
+daytrip,Victoria,2014,4374.52
+daytrip,Victoria,2015,4235.47
+daytrip,Victoria,2016,4481.7
+daytrip,Victoria,2017,4833.07
+daytrip,Victoria,2018,5493.83
+daytrip,Victoria,2019,6211.05
+daytrip,Victoria,2020,5440.77
+daytrip,Victoria,2021,3796.03
+daytrip,Victoria,2022,5404.98
+daytrip,Victoria,2023,8789.44
+daytrip,Queensland,2008,3151.97
+daytrip,Queensland,2009,3257.62
+daytrip,Queensland,2010,3685.59
+daytrip,Queensland,2011,3461.66
+daytrip,Queensland,2012,4061.1
+daytrip,Queensland,2013,4379.17
+daytrip,Queensland,2014,4243.09
+daytrip,Queensland,2015,4003.02
+daytrip,Queensland,2016,4391.65
+daytrip,Queensland,2017,4204.71
+daytrip,Queensland,2018,4923.97
+daytrip,Queensland,2019,5296.59
+daytrip,Queensland,2020,5067.16
+daytrip,Queensland,2021,4499.72
+daytrip,Queensland,2022,4895.72
+daytrip,Queensland,2023,7112.12
+daytrip,South Australia,2008,892.72
+daytrip,South Australia,2009,1002.55
+daytrip,South Australia,2010,967.07
+daytrip,South Australia,2011,976.43
+daytrip,South Australia,2012,1084.67
+daytrip,South Australia,2013,1152.56
+daytrip,South Australia,2014,1217.83
+daytrip,South Australia,2015,1123.58
+daytrip,South Australia,2016,1279.97
+daytrip,South Australia,2017,1371.78
+daytrip,South Australia,2018,1598.63
+daytrip,South Australia,2019,1638.47
+daytrip,South Australia,2020,1541.14
+daytrip,South Australia,2021,1432.97
+daytrip,South Australia,2022,1516.74
+daytrip,South Australia,2023,2243.15
+daytrip,Western Australia,2008,1389.92
+daytrip,Western Australia,2009,1224.03
+daytrip,Western Australia,2010,1233.01
+daytrip,Western Australia,2011,1278.87
+daytrip,Western Australia,2012,1451.63
+daytrip,Western Australia,2013,1474.35
+daytrip,Western Australia,2014,1858.85
+daytrip,Western Australia,2015,2095.37
+daytrip,Western Australia,2016,2072.27
+daytrip,Western Australia,2017,2130.92
+daytrip,Western Australia,2018,1896.3
+daytrip,Western Australia,2019,2318.48
+daytrip,Western Australia,2020,2174.71
+daytrip,Western Australia,2021,2192.67
+daytrip,Western Australia,2022,2221.04
+daytrip,Western Australia,2023,3255.47
+daytrip,Tasmania,2008,374.42
+daytrip,Tasmania,2009,425.21
+daytrip,Tasmania,2010,445.49
+daytrip,Tasmania,2011,414.32
+daytrip,Tasmania,2012,468.89
+daytrip,Tasmania,2013,517.16
+daytrip,Tasmania,2014,545.26
+daytrip,Tasmania,2015,565.37
+daytrip,Tasmania,2016,598.73
+daytrip,Tasmania,2017,647.49
+daytrip,Tasmania,2018,615.2
+daytrip,Tasmania,2019,714.24
+daytrip,Tasmania,2020,661.44
+daytrip,Tasmania,2021,605.79
+daytrip,Tasmania,2022,695.78
+daytrip,Tasmania,2023,719.92
+daytrip,Northern Territory,2008,115.03
+daytrip,Northern Territory,2009,139.19
+daytrip,Northern Territory,2010,149.1
+daytrip,Northern Territory,2011,106.87
+daytrip,Northern Territory,2012,181.89
+daytrip,Northern Territory,2013,125.33
+daytrip,Northern Territory,2014,155.68
+daytrip,Northern Territory,2015,203.92
+daytrip,Northern Territory,2016,169.3
+daytrip,Northern Territory,2017,213.06
+daytrip,Northern Territory,2018,156.32
+daytrip,Northern Territory,2019,222.32
+daytrip,Northern Territory,2020,167.48
+daytrip,Northern Territory,2021,203.83
+daytrip,Northern Territory,2022,155.34
+daytrip,Northern Territory,2023,250.38
+daytrip,ACT,2008,283.09
+daytrip,ACT,2009,221.62
+daytrip,ACT,2010,280.77
+daytrip,ACT,2011,231.14
+daytrip,ACT,2012,290.63
+daytrip,ACT,2013,281.53
+daytrip,ACT,2014,243.22
+daytrip,ACT,2015,314.85
+daytrip,ACT,2016,315.26
+daytrip,ACT,2017,309.81
+daytrip,ACT,2018,300.71
+daytrip,ACT,2019,344.09
+daytrip,ACT,2020,328.16
+daytrip,ACT,2021,212.4
+daytrip,ACT,2022,302.48
+daytrip,ACT,2023,612.46
