@@ -1,0 +1,72 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/data/spending_clean.csv"},
+    "params":[
+      {
+        "name": "attribute",
+        "bind":{
+            "input":"select",
+            "options": [
+                "null",
+                "overnight",
+                "daytrip"
+            ],
+            "labels":[
+                "Show both",
+                "Overnight trips",
+                "Day trips"
+            ],
+            "name":"Trip type: "
+        }
+      }
+    ],
+    "width": 450,
+    "height": 300,
+    "title": "Domestic spending on tourism in each state",
+    "encoding": {"x": {"field": "year", "type": "temporal","title":"Year"}},
+    "layer": [
+      {
+        "encoding": {
+          "color": {"field": "Location", "type": "nominal"},
+          "y": {"field": "spend", "type": "quantitative","title":"Amount Spent ($M AUD)"}
+        },
+        "layer": [
+          {"transform": [{"filter": "datum.triptype == attribute"}],"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}},{"filter": "datum.triptype == attribute"}], "mark": "point"}
+        ]
+      },
+      {
+        "transform": [
+            {"filter": "datum.triptype == attribute"},
+            {"pivot": "Location", "value": "spend", "groupby": ["year"]}
+        ],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "ACT", "type": "quantitative","format": ","},
+            {"field": "New South Wales", "type": "quantitative","format": ","},
+            {"field": "Northern Territory", "type": "quantitative","format": ","},
+            {"field": "Queensland", "type": "quantitative","format": ","},
+            {"field": "South Australia", "type": "quantitative"},
+            {"field": "Tasmania", "type": "quantitative","format": ","},
+            {"field": "Victoria", "type": "quantitative","format": ","},
+            {"field": "Western Australia", "type": "quantitative","format": ","}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+      }
+    ]
+  }
