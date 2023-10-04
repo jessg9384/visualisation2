@@ -22,7 +22,7 @@ body {
 .page {
     width: 850px;
     background-color: white;
-    margin: 20px;
+    margin: auto;
     padding: 50px;
     padding-top: 35px;
 }
