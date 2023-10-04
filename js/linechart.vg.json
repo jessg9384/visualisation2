@@ -7,12 +7,10 @@
         "bind":{
             "input":"select",
             "options": [
-                "null",
                 "overnight",
                 "daytrip"
             ],
             "labels":[
-                "Show both",
                 "Overnight trips",
                 "Day trips"
             ],
@@ -36,13 +34,13 @@
           "y": {"field": "spend", "type": "quantitative","title":"Amount Spent ($M AUD)"}
         },
         "layer": [
-          {"transform": [{"filter": "datum.triptype == attribute"}],"mark": "line"},
-          {"transform": [{"filter": {"param": "hover", "empty": false}},{"filter": "datum.triptype == attribute"}], "mark": "point"}
+          {"transform": [{"filter": "datum.triptype == attribute || datum.triptype == 'overnight' & attribute==null"}],"mark": "line"},
+          {"transform": [{"filter": {"param": "hover", "empty": false}},{"filter": "datum.triptype == attribute || datum.triptype == 'overnight' & attribute==null"}], "mark": "point"}
         ]
       },
       {
         "transform": [
-            {"filter": "datum.triptype == attribute"},
+            {"filter": "datum.triptype == attribute || datum.triptype == 'overnight' & attribute==null"},
             {"pivot": "Location", "value": "spend", "groupby": ["year"]}
         ],
         "mark": "rule",
@@ -52,11 +50,12 @@
             "value": 0
           },
           "tooltip": [
+            {"field": "year","type":"temporal","formatType": "year","title":"Year"},
             {"field": "ACT", "type": "quantitative","format": ","},
             {"field": "New South Wales", "type": "quantitative","format": ","},
             {"field": "Northern Territory", "type": "quantitative","format": ","},
             {"field": "Queensland", "type": "quantitative","format": ","},
-            {"field": "South Australia", "type": "quantitative"},
+            {"field": "South Australia", "type": "quantitative","format": ","},
             {"field": "Tasmania", "type": "quantitative","format": ","},
             {"field": "Victoria", "type": "quantitative","format": ","},
             {"field": "Western Australia", "type": "quantitative","format": ","}
