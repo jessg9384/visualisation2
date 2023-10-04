@@ -18,7 +18,7 @@
         }
       }
     ],
-    "width": 500,
+    "width": "container",
     "height": 300,
     "autosize": {
         "type": "fit",
