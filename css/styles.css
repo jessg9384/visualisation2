@@ -54,6 +54,6 @@ h1 {
 
 .line-chart-annotation {
   position: absolute;
-  top: 200px;
-  right: 50px;
+  top: 20px;
+  right: 8px;
 }
