@@ -51,3 +51,9 @@ h1 {
 .small-font {
     font-size: 14px;
 }
+
+.line-chart-annotation {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
