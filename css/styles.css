@@ -30,6 +30,8 @@ body {
 
 .vis-container {
     width: 100%;
+    z-index: 0; /* set lower z-index value */
+	position: relative; /* position must be set for z-index to work */
 }
 
 .description h2,
@@ -53,12 +55,13 @@ h1 {
     font-size: 14px;
 }
 
-.overlay-text {
+line-chart-annotation {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  font-weight: bold;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+  z-index: 1; /* set higher z-index value */
 }
 
