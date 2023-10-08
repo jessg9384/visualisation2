@@ -59,7 +59,7 @@ h1 {
     z-index: 1; /* set higher z-index value */
     position: absolute; /* position must be set for z-index to work */
     font-size: 10px;
-    top: 200px;
+    top: 175px;
     left: 470px;
     width: 100px;
     height: 100px;
