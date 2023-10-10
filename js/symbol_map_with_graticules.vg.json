@@ -1,28 +1,27 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 380,
-    "height": 400,
-    "title": ["Day trips to Australian regions","and average expenditure in 2023"],
+    "width": "container",
+    "height": 350,
+    "title": ["Day trips to Australian region and average expenditure in 2023"],
     "projection": {"type": "mercator"},
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    },
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/js/aus_states_with_graticules.topojson",
+          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/js/aus_states_with_graticules.topojson",
           "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
         },
         "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/js/aus_states_with_graticules.topojson",
-          "format": {"type": "topojson", "feature": "ne_50m_graticules_30"}
-        },
-        "mark": {"type": "geoshape", "fill": null, "stroke": "darkgray"}
-      },
-
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/data/visualisation2dataold.csv"
+          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2dataold.csv"
         },
         "mark": {"type": "circle","tooltip":true},
         "encoding": {
@@ -31,13 +30,13 @@
           "size": {
             "field": "Number of trips (000)",
             "type": "quantitative",
-            "title": "Number of trips ('000)",
-            "scale": {"domain": [1500, 25000]}
+            "title": ["Number of","trips ('000)"],
+            "scale": {"domain": [1000, 25000]}
           },
           "color": {
             "field": "Avg expenditure per trip (dollars) in year ending March 2023",
             "type": "quantitative",
-            "title": "Average expenditure ($)",
+            "title": ["Average", "expenditure ($)"],
             "scale": {"scheme": "blues"}
           },
           "tooltip": [
