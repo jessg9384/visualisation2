@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visualisation 2 | Week 10 Homework </title>
+  <title>Tourism | Jessica Goss</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -11,48 +11,102 @@
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
   
 </head>
 <body>
   
+  <!-- annotations -->
+  <div class="line-chart-annotation">
+    <p>In 2020, the Covid-19 pandemic contributed to a total 18.7% drop in spending from 2019</p>
+  </div>
+  
   <div class="page">
-    <div class="line-chart-annotation">
-        <p>In 2020, the Covid-19 pandemic contributed to a total 18.7% drop in spending from 2019</p>
+    
+    <div class="banner">
+      <img src="images/title_banner.png" />
+      
     </div>
 
-    <!-- pure grid group -->
+    <!-- pure grid group - title banner -->
+    
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div class="description description-left">
-        <h1>Week 10 Homework Visualisations</h1>
-        <p>Tourism Australia visualisations.</p>
+        
+        </div>
       </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div id="vis1" class="vis-container"></div>
+      <div class="pure-u-1-4">
+        <div class="pure-u-1-1 vertical-split treemap">
+          <p> treemap goes here</p>
+        </div>
+        <div class="text-regular">
+          <p> Text for top treemap<br><br> Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!--- <div id="vis1" class="vis-container"></div> -->
       </div>
       <div class="pure-u-1-2">
         <div id="vis2" class="vis-container"></div>
       </div>
+      <div class="pure-u-1-4">
+        <div class="vertical-split">
+          <h2>#1 Sydney</h2>
+          <div class="picture"><p>picture of location</p></div>
+          <p>text about location</p>
+        </div>
+          <h2>#2 Melbourne</h2>
+          <div class="picture"><p>picture of location</p></div>
+          <p>text about location</p>        
+
+      </div>
+      
     </div>
 
-    </div>
     <!-- end pure grid group -->
 
     <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by Jessica Goss. The datasource is <a href="https://www.tra.gov.au/en/domestic/domestic-tourism-results.html" target=" _blank">Australian Trade and Investment Commission - National Visitor Survey</href>.</p>
+      <div class="pure-u-1-4">
+          <div class="vertical-split treemap">
+          <p> treemap goes here</p>
+          </div>
+        <div class="text-regular">
+          <p>Text for bottom treemap. <br><br> Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!--- <div id="vis1" class="vis-container"></div> -->
+      </div>
+
+        <div class="pure-u-1-3">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-6">
+          <div class="text-regular">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+          </div>
+        </div>
+
+      <div class="pure-u-1-4">
+    
+          <h2>#3 Brisbane</h2>
+          <div class="picture"><p>picture of location</p></div>
+          <p>text about location</p>
+          <p>text about location</p>
+          <p>text about location</p>
+          <p>text about location</p>
+          <p>text about location</p>
+
+          <div class="small-font">
+            <p>This visualisation is created by Jessica Goss. The datasource is <a href="https://www.tra.gov.au/en/domestic/domestic-tourism-results.html" target=" _blank">Australian Trade and Investment Commission - National Visitor Survey</a>.</p>
+          </div>
       </div>
     </div>
-
-
   </div> <!-- end page -->
 
 
