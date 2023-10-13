@@ -30,7 +30,7 @@
     "layer": [
       {
         "encoding": {
-          "color": {"field": "Location", "type": "nominal"},
+          "color": {"field": "Location", "type": "nominal","legend":{"direction": "vertical","orient": "right"},"scale":{"scheme":"set2"}},
           "y": {"field": "spend", "type": "quantitative","title":"Amount Spent ($M AUD)"}
         },
         "layer": [
@@ -65,12 +65,14 @@
             "title": "Amount Spent ($M AUD)"
           },
           "color": {
+            
             "condition": {
               "test": "datum.spend == 30000",
               "value": "black"
             },
             "value": "transparent"
           }
+          
         }
       },
       {
@@ -86,15 +88,16 @@
           },
           "tooltip": [
             {"field": "year","type":"temporal","formatType": "year","title":"Year"},
-            {"field": "ACT", "type": "quantitative","format": ","},
-            {"field": "NSW", "type": "quantitative","format": ",","title": "NSW"},
-            {"field": "NT", "type": "quantitative","format": ",","title": "NT"},
-            {"field": "QLD", "type": "quantitative","format": ",","title": "QLD"},
-            {"field": "SA", "type": "quantitative","format": ",","title": "SA"},
-            {"field": "TAS", "type": "quantitative","format": ",","title": "TAS"},
-            {"field": "VIC", "type": "quantitative","format": ",","title": "VIC"},
-            {"field": "WA", "type": "quantitative","format": ",","title": "WA"}
+            {"field": "ACT", "type": "quantitative","format": ",.0f"},
+            {"field": "NSW", "type": "quantitative","format": ",.0f","title": "NSW"},
+            {"field": "NT", "type": "quantitative","format": ",.0f","title": "NT"},
+            {"field": "QLD", "type": "quantitative","format": ",.0f","title": "QLD"},
+            {"field": "SA", "type": "quantitative","format": ",.0f","title": "SA"},
+            {"field": "TAS", "type": "quantitative","format": ",.0f","title": "TAS"},
+            {"field": "VIC", "type": "quantitative","format": ",.0f","title": "VIC"},
+            {"field": "WA", "type": "quantitative","format": ",.0f","title": "WA"}
           ]
+          
           
         },
         "params": [{
