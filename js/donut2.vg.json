@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple donut chart with embedded data.",
+    "data": {"url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/data/visitors_clean.csv"},
+    "mark": {"type": "arc", "innerRadius": 50},
+    "title": "Number of visitors by state",
+    "width":"container",
+    "height":180,
+    "config": {
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
+    "encoding": {
+      "theta": {"field": "visitors", "type": "quantitative"},
+      "color": {"field": "Location", "legend":{"orient": "top-left","title":""},"type": "nominal","scale":{"scheme":"set2"}},
+      "tooltip": [
+        {"field": "Location","type":"nominal","title":"State/Territory"},
+        {"field": "visitors","type":"quantitative","title":"Visitors ('000)","format":",.0f"}
+       ]
+    },
+    "transform": [{"filter":"(datum.year==attribute2 || datum.year == '2023' & attribute2 == null) && ((datum.triptype == attribute) || (datum.triptype == 'overnight' & attribute==null))"}
+    
+    ],
+    "params":[
+        {
+          "name": "attribute",
+          "bind":{
+              "input":"select",
+              "options": [
+                  "overnight",
+                  "daytrip"
+              ],
+              "labels":[
+                  
+                  "Overnight trip",
+                  "Day trip"
+              ],
+              "name":"Trip type: "
+          }
+        },
+        {
+            "name": "attribute2",
+            "bind": {
+            "name": "Year ",
+            "input": "range", "min": 2008,"max": 2023,"step": 1}
+ 
+        }
+      ]
+  }
+  
