@@ -1,8 +1,9 @@
+
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
-    "height": 350,
-    "title": ["Day trips to Australian region and average expenditure in 2023"],
+    "height": 340,
+    "title": ["Most popular Australian regions by number of trips taken"],
     "projection": {"type": "mercator"},
     "config": {
       "style": {
@@ -21,7 +22,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2dataold.csv"
+          "url": "https://raw.githubusercontent.com/jessg9384/week_9_homework/main/data/visualisation2data.csv"
         },
         "mark": {"type": "circle","tooltip":true},
         "encoding": {
@@ -31,21 +32,50 @@
             "field": "Number of trips (000)",
             "type": "quantitative",
             "title": ["Number of","trips ('000)"],
-            "scale": {"domain": [1000, 25000]}
+            "scale": {"domain": [1000, 25000]},
+            "legend":{"orient": "none","legendX":0,"legendY":215}
+            
+          },
+          "opacity":{
+            "condition":{
+              "test": "test(regexp(search_input,'i'),datum.Region) || search_input==datum.Rank",
+       
+              
+              "value" : 1
+            },
+            "value":0.1
           },
           "color": {
             "field": "Avg expenditure per trip (dollars) in year ending March 2023",
             "type": "quantitative",
             "title": ["Average", "expenditure ($)"],
-            "scale": {"scheme": "blues"}
+            "scale": {"scheme": "teals","domain":[75,275]},
+            "legend":{"direction": "horizontal","legendX":80,"legendY":280,"orient": "none"}
+            
+            
+            
           },
+          
           "tooltip": [
             {"field": "Region","type":"nominal","title":"Region"},
             {"field": "Rank","type":"ordinal","title":"Rank (by # of trips)"},
-            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)","format":","},
-            {"field": "Avg expenditure per trip (dollars) in year ending March 2023","type":"quantitative","title":"Average expenditure ($)"}
+            {"field": "Number of trips (000)","type":"quantitative","title":"Number of trips ('000)","format":",.0f"},
+            {"field": "Avg expenditure per trip (dollars) in year ending March 2023","type":"quantitative","title":"Average expenditure ($)","format":".1f"}
           ]
         }
+        
+      }
+    ],
+    "params": [
+      {
+        "name": "search_input",
+        "bind" :{
+          "input": "search",
+          "placeholder": "for a region or rank",
+          "name" : "Search "
+
+        },
+        "value": ""
         
       }
     ]
