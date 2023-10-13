@@ -4,9 +4,18 @@
     "data": {"url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/data/spending_clean_new.csv"},
     "mark": {"type": "arc", "innerRadius": 50},
     "title": "Revenue from domestic tourism by state",
+    "width":"container",
+    "height":180,
+    "config": {
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
     "encoding": {
       "theta": {"field": "spend", "type": "quantitative"},
-      "color": {"field": "Location", "legend":{"orient": "right"},"type": "nominal","scale":{"scheme":"set2"}},
+      "color": {"field": "Location", "legend":{"orient": "top-left","title":""},"type": "nominal","scale":{"scheme":"set2"}},
       "tooltip": [
         {"field": "Location","type":"nominal","title":"State/Territory"},
         {"field": "spend","type":"quantitative","title":"Revenue ($M)","format":",.0f"}
