@@ -1,4 +1,4 @@
-trip type,Location,year,spend,percentage
+triptype,Location,year,spend,percentage
 overnight,NSW,2008,12978.88,27.3
 overnight,VIC,2008,9262.52,19.5
 overnight,QLD,2008,13226.06,27.8
