@@ -21,9 +21,47 @@
   
   <!-- annotations -->
   <div class="line-chart-annotation">
-    <p>In 2020, the Covid-19 pandemic contributed to a total 18.7% drop in spending from 2019</p>
+    <p>In 2020, the Covid-19 pandemic contributed to a total national 18.7% drop in spending from 2019</p>
+  </div>
+
+  <div class="donut-annotation-1">
+    <p><span class="NT">NT</span> has the smallest proportion of domestic visitors, ranging between 0.6% and 1.7%.</p>
+  </div>
+
+  <div class="donut-annotation-2">
+    <p><span class="QLD">QLD</span> outperforms <span class="VIC">VIC</span> for overnight trips, but <span class="VIC">VIC</span> tends to have greater revenue from day trips. </p>
   </div>
   
+  <div class="map-annotation">
+    <p><span class="NT">NT</span> is the only state with no regions in the top 30</p>
+  </div>
+
+  <div class="map-annotation2">
+    <p>Most of the top-ranked locations are close to the most densely-populated parts of Australia.</p>
+  </div>
+
+  <div class="map-annotation3">
+    <p>The East coast is home to Australia's most populated cities: <span class="NSW">Sydney</span>, <span class="VIC">Melbourne</span> and <span class="QLD">Brisbane</span></p>
+  </div>
+
+  <div class="map-annotation4">
+    <p><span class="ACT">Canberra</span> has the highest average expenditure</p>
+  </div>
+  
+  <div class="references">
+    <div class="small-font">
+      <p>This visualisation is created by Jessica Goss. The datasource is <a href="https://www.tra.gov.au/en/domestic/domestic-tourism-results.html" target=" _blank">ATIC - National Visitor Survey</a>. Images sources are listed <a href="https://jessg9384.github.io/visualisation2/images/image_sources.txt" target=" _blank">here</a>.</p>
+    </div>
+  </div>
+
+
+
+  <!--
+  <div class="map-annotation">
+    <p><span class="opening">Word</span>introduction goes here </p>
+  </div> 
+  -->
+
   <div class="page">
     
     <div class="banner">
@@ -45,11 +83,11 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-7-24">
-        <div class="pure-u-1-1 vertical-split treemap">
-          <p> treemap goes here</p>
-        </div>
-        <div class="text-regular">
-          <p> Text for top treemap<br><br> Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="text-intro vertical-split-3"><span class="opening">More </span>than an economic powerhouse, tourism in Australia is the very soul of a nation. From sun-drenched coasts to the rugged outback, this land offers a canvas of wonders.<br><br>Explore the interactive charts, unraveling how each state weaves its unique threads into the rich fabric of Australia's tourism story...</p>
+        
+        <div class="pure-u-1-1 vis-container">
+
+          <div id="vis3" class="vis-container"></div>
         </div>
         <!--- <div id="vis1" class="vis-container"></div> -->
       </div>
@@ -60,35 +98,31 @@
       </div>
      
       <div class="pure-u-7-24">
-        <div class="vertical-split-3">
-          <h2>#1 Sydney</h2>
-          <div class="picture"><p>picture of location</p></div>
-          <p>text about location</p>
-        </div>
-        <div class="vertical-split-3">
-          <h2>#2 Melbourne</h2>
-          <div class="picture"><p>picture of location</p></div>
-          <p>text about location</p>        
-        </div>
-        <div class="vertical-split-3">
-          <h2>#3 Brisbane</h2>
-          <div class="picture"><p>picture of location</p></div>
-          <p>text about location</p>        
+        <div class="ranking-split">
+          <div class="break"></div>
+          <h2>#1 Sydney, <span class="NSW">NSW</span></h2>
+          <p>This buzzing metropolis is home to some of Australia's best-known sights, such as the Sydney Harbour Bridge and the Opera House. The infamous Bondi Beach, known for its deadly rips, can also be found here. </p>
+        
+          <h2>#2 Melbourne, <span class="VIC">VIC</span></h2>
+          <p>Known as the cultural capital of Australia, Melbourne is home to festivals and events year-round. Some highlights include the Australian Open, the Australian Grad Prix and the Melbourne International Comedy Festival. Melbourne has also been ranked Australia's most liveable city for the second year in a row<a href="https://www.eiu.com/n/campaigns/global-liveability-index-2023/#:~:text=EIU's%20liveability%20index%20quantifies%20the,and%20education%20in%20developing%20countries." target=" _blank"><sup>[1]</sup></a>.</p>        
+          <h2>#3 Brisbane, <span class="QLD">QLD</span> </h2>
+          <p>With average temperature highs of 26.6&deg;, Brisbane is by far the warmest of the top three destinations. It's close to the Great Barrier Reef and the Gold Coast, which also attract many tourists annually. Queensland is the only state with two of the top five most popular regions.</p>        
         </div>
       </div>
       
     </div>
 
     <!-- end pure grid group -->
+    <div class="break"></div>
 
 
     <div class="pure-g">
       <div class="pure-u-7-24">
-          <div class="vertical-split treemap">
-          <p> treemap goes here</p>
-          </div>
-        <div class="text-regular">
-          <p>Text for bottom treemap. <br><br> Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <p class="text-regular vertical-split-4">There is a strong correlation between the number of visitors to each state and its tourism revenue, for both day trips and overnight trips. <span class="NSW">NSW</span>, <span class="QLD">QLD</span> and <span class="VIC">VIC</span> consistently account for over 70% of the number of visitors and revenue.</p>
+
+        <div class="pure-u-1-1 vis-container">
+          <div id="vis4" class="vis-container"></div>
         </div>
         <!--- <div id="vis1" class="vis-container"></div> -->
       </div>
@@ -96,31 +130,34 @@
         <div class="pure-u-5-12">
           <div id="vis1" class="vis-container"></div>
         </div>
-        <div class="pure-u-7-24">
-          <div class="text-regular">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          </div>
+        <div class="pure-u-3-24">
+          <p class="text-regular2">Investigating spending patterns over time uncovers some interesting insights.<br><br>The state with the greatest spending on overnight trips changes often, <span class="NSW">NSW</span> and <span class="QLD">QLD</span> are regularly in close contention for the top spot.<br><br><span class="VIC">VIC</span>, which spent the most days locked down throughout 2020-21 also had the greatest drop in tourism spending.</p>
+
         </div>
-
-      <div class="pure-u-1-4">
-
-      </div>
+        <div class="pure-u-4-24">
+          <div class="pure-u-1-1"><img src="images/waterfall.png" /></div>
+          
+         
+        </div>
     </div>
-    <div class="small-font">
-      <p>This visualisation is created by Jessica Goss. The datasource is <a href="https://www.tra.gov.au/en/domestic/domestic-tourism-results.html" target=" _blank">Australian Trade and Investment Commission - National Visitor Survey</a>.</p>
-    </div>
+
   </div> <!-- end page -->
 
 
   <script type="text/javascript">
     var specVis1 = "js/linechart.vg.json";
     var specVis2 = "js/symbol_map_with_graticules.vg.json";
+    var specVis3 = js/donut2.vg.json";
+    var specVis4 = js/donut1.vg.json";
+      
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
     vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+    vegaEmbed('#vis3', specVis3, { "actions": false });
+    vegaEmbed('#vis4', specVis4, { "actions": false });
 
   </script>
   
