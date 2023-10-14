@@ -1,9 +1,9 @@
 
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
+    "width": 460,
     "height": 340,
-    "title": ["Most popular Australian regions by number of trips taken"],
+    "title": {"text":["Most Popular Australian Regions"],"fontSize":18,"font":"Arvo","color":"#242526","subtitle":"ranked by number of visitors in 2023","subtitleFont":"arvo","subtitleFontStyle":"italic"},
     "projection": {"type": "mercator"},
     "config": {
       "style": {
