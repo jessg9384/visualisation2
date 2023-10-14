@@ -11,21 +11,21 @@
                 "daytrip"
             ],
             "labels":[
-                "Overnight trips",
-                "Day trips"
+                "Overnight trip",
+                "Day trip"
             ],
             "name":"Trip type: "
         }
       }
     ],
-    "width": "container",
+    "width": 470,
     "height": 320,
     "autosize": {
         "type": "fit",
         "contains": "padding",
         "resize": true
       },
-    "title": "Domestic spending on tourism in each state",
+    "title": {"text":"Domestic spending on tourism over time","fontSize":18,"font":"Arvo","color":"#242526"},
     "encoding": {"x": {"field": "year", "type": "temporal","title":"Year"}},
     "layer": [
       {
