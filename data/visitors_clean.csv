@@ -1,4 +1,4 @@
-trip type,Location,year,visitors,percentage
+triptype,Location,year,visitors,percentage
 daytrip,NSW,2008,46051.39,32.7
 daytrip,VIC,2008,35411.88,25.2
 daytrip,QLD,2008,29339.79,20.8
