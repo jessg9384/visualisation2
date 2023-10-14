@@ -2,11 +2,14 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple donut chart with embedded data.",
     "data": {"url": "https://raw.githubusercontent.com/jessg9384/visualisation2/main/data/spending_clean_new.csv"},
-    "mark": {"type": "arc", "innerRadius": 50},
-    "title": "Revenue from domestic tourism by state",
-    "width":"container",
-    "height":180,
+    "mark": {"type": "arc", "innerRadius": 30},
+    "title": {"text":"Spending in each state","fontSize":14,"font":"Arvo","color":"#242526"},
+    
+    
+    "width":310,
+    "height":130,
     "config": {
+        "font": "Roboto",        
         "style": {
           "cell": {
             "stroke": "transparent"
@@ -18,7 +21,8 @@
       "color": {"field": "Location", "legend":{"orient": "top-left","title":""},"type": "nominal","scale":{"scheme":"set2"}},
       "tooltip": [
         {"field": "Location","type":"nominal","title":"State/Territory"},
-        {"field": "spend","type":"quantitative","title":"Revenue ($M)","format":",.0f"}
+        {"field": "spend","type":"quantitative","title":"Revenue ($M)","format":",.0f"},
+        {"field":"percentage","type": "quantitative","title":"Percentage of total","format":".1f"}
        ]
     },
     "transform": [{"filter":"(datum.year==attribute2 || datum.year == '2023' & attribute2 == null) && ((datum.triptype == attribute) || (datum.triptype == 'overnight' & attribute==null))"}
