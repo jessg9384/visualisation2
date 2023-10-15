@@ -163,7 +163,7 @@ h1 {
     position: absolute; /* position must be set for z-index to work */
     font-size: 10px;
     top: 220px;
-    left: 910px;
+    left: 920px;
     width: 70px;
     height: 100px;    
   }
